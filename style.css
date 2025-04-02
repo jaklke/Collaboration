@@ -1,0 +1,48 @@
+app-task-details-wrapper app-task-details {
+  max-width: none;
+  }
+
+  /* In List view, the task list expands to the full width when no task is selected, hiding the unused grey space on the right */ 
+app-tasks-info-panel.ng-star-inserted {
+    display: none;
+  }
+
+  /* In List view, this changes the task state indicator into a small colored bar. */ 
+  span.badge.badge-status.badge-list-group {
+    width: 5px;
+    font-size: 0px;
+  }
+
+   /* In List view, this hides the indicator for that the task is a project risk */
+  span.project-risk {
+  display: none;
+  
+  }
+
+/* In List view, this changes the colors of the task type indicator for Issues. */
+  span[title="Issue"] span {
+  background-color:rgba(255, 170, 170,0.2);
+  color: #bb6666;
+  }
+
+/* When loading the Board view, these overrides will hide the bucket overview at the bottom, and it will reappear when the blue icon is clicked. */
+  app-panel-bottom div.panel {
+    height:0px;
+  }
+  app-panel-bottom.collapsed div.panel {
+    height:257px;
+  }
+
+  /* This expands the width of the time registration pane on the right. */
+  app-time-registration-sidebar.ng-star-inserted {
+    max-width: 500px;
+    min-width: 500px;
+    width: 500px;
+  }
+
+/* Hides the coghweel for the cookies settings */
+div.ch2 {
+  display: none;
+}
+
+  
