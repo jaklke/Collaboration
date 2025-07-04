@@ -1,4 +1,4 @@
-app-task-details-wrapper app-task-details {
+app-task-details-wrapper app-task-details, app-release-notes-details {
   max-width: none;
   }
 
@@ -25,7 +25,9 @@ app-tasks-info-panel.ng-star-inserted {
   color: #bb6666;
   }
 
-/* When loading the Board view, these overrides will hide the bucket overview at the bottom, and it will reappear when the blue icon is clicked. */
+  
+
+/* When loading the Board view, these overrides will hide the bucket overview at the bottom, and it will reappear when the blue icon is clicked.*/
   app-panel-bottom div.panel {
     height:0px;
   }
@@ -45,4 +47,40 @@ div.ch2 {
   display: none;
 }
 
-  
+/* 8 april 2025*/
+/* shrinks the drop down with task status to the color a first 3 letters */
+button#dropdownMenuButtonTaskStatus
+{
+    width: 75px;
+}
+/* less white space under the breadcumb section */
+div.breadcrumb-section {
+  display: contents;
+}
+/* but make sure there's some space between header and rest of content */
+div.header-section {
+  margin-bottom: 5px;
+}
+
+/* minimize the padding for the content*/
+/*#wrapper main>div>*:not(router-outlet)>.content {
+  padding: 0px;
+  margin : 0px;
+}
+main[_ngcontent-ng-c177657502] {
+padding: 10px;
+
+}*/
+
+/* Puts block with percent complete, estimate time, prio etc closer to task description */
+.py-3 {
+  padding-top: 0;
+}
+
+ 
+/*div.modal.fade.show {
+  width: 1500px;
+
+  margin-right: auto;
+  margin-left: auto;
+}*/
